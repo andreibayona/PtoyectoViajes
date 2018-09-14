@@ -28,13 +28,14 @@ public class Sesion {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SesionGenerator")
     @SequenceGenerator(name = "SesionGenerator", sequenceName = "sesion_sesion_id", allocationSize = 1)
     @Column(name = "idSesion") 
+   
      private long idSesion;
    @Column(name = "password")
-    String password;
+    String password; 
    @Column(name = "registrarse")
     String Registrarse;
    @Column(name = "usuarios_idusuario")
-    int usuariosidusuario;
+    int usuariosidusuario;  
    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "sesion_idUsuario")
     private Sesion sesion;

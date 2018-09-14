@@ -43,6 +43,7 @@ public class Usuarios {
     int sesionidUsuario;
     @Column(name = "ciudad_idciudad")
     int ciudadidciudad;
+    // relaciones de la base de datos
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "sesion_idUsuario")
     private Usuarios usuarios;
