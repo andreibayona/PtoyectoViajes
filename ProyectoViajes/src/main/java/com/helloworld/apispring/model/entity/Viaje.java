@@ -19,7 +19,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "publicar_viaje")
-public class Publicar_Viaje {
+public class Viaje {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "Publicar_ViajeGenerator")
@@ -54,7 +54,7 @@ public class Publicar_Viaje {
     
       //RELACION 
 
-    public Publicar_Viaje(long idreserva, String Usuario, String PuestosReservados, String Destino, String HoraLlegadaOrigen, String HoraLlegadaDestino, String ReservaViaje, String FechaReserva, String HoraReserva, Long id) {
+    public Viaje(long idreserva, String Usuario, String PuestosReservados, String Destino, String HoraLlegadaOrigen, String HoraLlegadaDestino, String ReservaViaje, String FechaReserva, String HoraReserva, Long id) {
         this.idreserva = idreserva;
         this.Usuario = Usuario;
         this.PuestosReservados = PuestosReservados;

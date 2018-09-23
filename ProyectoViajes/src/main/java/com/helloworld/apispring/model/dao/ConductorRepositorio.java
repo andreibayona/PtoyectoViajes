@@ -9,6 +9,6 @@ package com.helloworld.apispring.model.dao;
  *
  * @author Jessica Medina
  */
-public class Viaje {
+public class ConductorRepositorio {
     
 }

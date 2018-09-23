@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.helloworld.apispring.model.dao;
+package com.mycompany.proyectoviajes.controller;
 
 /**
  *
  * @author Jessica Medina
  */
-public class Pasajero {
+public class ConductorServicio {
     
 }
