@@ -21,6 +21,7 @@ import javax.persistence.Transient;
  *
  * @author Jorge Andrei
  */
+
 @Entity
 @Table(name="usuarios")
 public class Usuarios {
@@ -47,8 +48,13 @@ public class Usuarios {
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "sesion_idUsuario")
     private Usuarios usuarios;
+    
+    private Usuarios Usuarios;
+    
     @Transient
     private Long session;
+    
+    
 
     public Usuarios(long idusuario, String Nombre, String Telefono, String Direccion, String Correo, int sesionidUsuario, int ciudadidciudad, Usuarios usuarios, Long session) {
         this.idusuario = idusuario;

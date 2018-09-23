@@ -11,7 +11,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = "com.helloworld.apispring")
+@ComponentScan(basePackages = "com.Reserva_Viaje.apispring")
 public class InitConfiguration {
     
 }

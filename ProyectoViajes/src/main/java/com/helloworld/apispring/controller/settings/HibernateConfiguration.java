@@ -22,7 +22,7 @@ import java.util.Properties;
 
 @Configuration
 @EnableTransactionManagement
-@ComponentScan(basePackages = "com.helloworld.apispring")
+@ComponentScan(basePackages = "com.Reserva_Viaje.apispring")
 @PropertySource(value = { "classpath:application.properties" })
 public class HibernateConfiguration {
 
@@ -33,7 +33,7 @@ public class HibernateConfiguration {
     public LocalSessionFactoryBean sessionFactory() {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
         sessionFactory.setDataSource(dataSource());
-        sessionFactory.setPackagesToScan(new String[] { "com.helloworld.apispring" });
+        sessionFactory.setPackagesToScan(new String[] { "com.Reserva_Viaje.apispring" });
         sessionFactory.setHibernateProperties(hibernateProperties());
         return sessionFactory;
     }

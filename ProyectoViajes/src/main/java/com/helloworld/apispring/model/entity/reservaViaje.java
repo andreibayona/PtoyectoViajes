@@ -29,7 +29,11 @@ public class reservaViaje {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "reservaviajeGenerator")
     @SequenceGenerator(name = "reservaviajeGenerator", sequenceName = "reservaviaje_reservaviaje_id", allocationSize = 1)
     @Column(name = "idreserva_viaje")
+     
+   
     private long idreservaviaje;
+     @Column
+    private Integer reserva;
      @Column(name = "puestosReservados")
     String puestosreservados;
      @Column(name = "destino")
@@ -44,12 +48,16 @@ public class reservaViaje {
     String horaReserva;
      @Column(name = "usuarios_idusuarios")
     int usuarios_idusuarios;
-     @Column(name = "ciudad_idciudad")
-    int ciudadIdciudad;
+     
+//     @Column(name = "ciudad_idciudad")
+//    int ciudadIdciudad;
+     
+     
       @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "usuarios_idusuarios")
      
     private reservaViaje reservaViaje;
+       
     @Transient
     private Long Usuarios;
 
@@ -62,7 +70,7 @@ public class reservaViaje {
         this.FechaReserva = FechaReserva;
         this.horaReserva = horaReserva;
         this.usuarios_idusuarios = usuarios_idusuarios;
-        this.ciudadIdciudad = ciudadIdciudad;
+//        this.ciudadIdciudad = ciudadIdciudad;
         this.reservaViaje = reservaViaje;
         this.Usuarios = Usuarios;
     }
@@ -131,13 +139,13 @@ public class reservaViaje {
         this.usuarios_idusuarios = usuarios_idusuarios;
     }
 
-    public int getCiudadIdciudad() {
-        return ciudadIdciudad;
-    }
-
-    public void setCiudadIdciudad(int ciudadIdciudad) {
-        this.ciudadIdciudad = ciudadIdciudad;
-    }
+//    public int getCiudadIdciudad() {
+//        return ciudadIdciudad;
+//    }
+//
+//    public void setCiudadIdciudad(int ciudadIdciudad) {
+//        this.ciudadIdciudad = ciudadIdciudad;
+//    }
 
     public reservaViaje getReservaViaje() {
         return reservaViaje;

@@ -3,12 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.proyectoviajes.conexionbd;
+package com.helloworld.apispring.model.entity;
 
 /**
  *
- * @author Jorge Andrei
+ * @author Jessica Medina
  */
-public class Conexionbd {
-
+public class CaracteristicasCarro {
+    
+    
 }
